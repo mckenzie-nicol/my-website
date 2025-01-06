@@ -26,7 +26,7 @@ const Landing = () => {
     
     {/* Enter Button */}
     <a 
-      href="#portfolio" 
+      href="/home" 
       className="mt-8 inline-block 
              bg-white 
              text-gray-900 
