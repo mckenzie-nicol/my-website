@@ -1,4 +1,9 @@
+import { useNavigate } from "react-router-dom"
+
 const Landing = () => {
+
+    const navigate = useNavigate();
+
   return (
     <div>
       {/* Main Welcome Banner Section */}
@@ -25,8 +30,8 @@ const Landing = () => {
     </p>
     
     {/* Enter Button */}
-    <a 
-      href="/home" 
+    <button 
+      onClick={() => navigate("/home")}
       className="mt-8 inline-block 
              bg-white 
              text-gray-900 
@@ -38,7 +43,7 @@ const Landing = () => {
              duration-300 
              hover:scale-105">
       Enter
-    </a>
+    </button>
   </div>
 </section>
 
