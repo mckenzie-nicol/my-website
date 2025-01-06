@@ -16,7 +16,7 @@ const MatrixRainBackground = () => {
       for (let i = 0; i < columns; i++) {
         drops[i] = 1;
       }
-      const frameRate = 22;
+      const frameRate = 25;
       let lastFrameTime = Date.now();
 
       const draw = () => {
