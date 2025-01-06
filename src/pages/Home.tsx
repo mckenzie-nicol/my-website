@@ -1,5 +1,4 @@
 import React from "react";
-import Banner from "../components/home/Banner";
 import About from "../components/home/About";
 import Projects from "../components/home/Projects";
 import Contact from "../components/home/Contact";
@@ -26,10 +25,9 @@ const Home: React.FC = () => {
 
       <div className="relative z-10">
         <div className="flex-col space-y-10 my-10 mx-24">
-          <Banner />
-            <About />
-        <Projects />
-        <Contact />
+          <About />
+          <Projects />
+          <Contact />
         </div>
       </div>
     </div>
