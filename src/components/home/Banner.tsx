@@ -1,6 +1,6 @@
 export default function Banner() {
     return (
-      <div className="bg-transparent bg-opacity-20 backdrop:filter backdrop-blur-md w-full rounded-lg shadow-lg p-6">
+      <div className="bg-transparent  p-6">
         <h2 className="text-xl text-white font-semibold mb-2">
           Welcome to My Personal Website
         </h2>

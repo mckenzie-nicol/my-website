@@ -1,13 +1,18 @@
 export default function About() {
   return (
-    <div className="bg-transparent bg-opacity-20 backdrop:filter backdrop-blur-md w-full rounded-lg shadow-lg p-6">
-      <h2 className="text-xl text-white font-semibold mb-2">About Me</h2>
-      <p className="text-white mb-4">
-        Write up about work experience and journey to completing the CST
-        diploma. Maybe photo beside?
-        <br />
-        Should include all links and whatnot to social media stuff.
-      </p>
+    <div className="text-white">
+      <h1 className="text-4xl font-semibold mb-6">About Me</h1>
+      <div
+        className="bg-[#8b6fe6] text-white p-6 rounded-lg shadow 
+                            transition-transform transform hover:scale-[1.02] hover:shadow-xl"
+      >
+        <p className="mb-4">
+          Write up about work experience and journey to completing the CST
+          diploma. Maybe photo beside?
+          <br />
+          Should include all links and whatnot to social media stuff.
+        </p>
+      </div>
     </div>
   );
 }
