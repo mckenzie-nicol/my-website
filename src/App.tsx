@@ -4,14 +4,12 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import MatrixRainBackground from "./components/MatrixRainBackground";
 import Landing from "./pages/Landing";
 
 const App: React.FC = () => {
   return (
     <Router>
       <Navbar />
-      <MatrixRainBackground />
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/home" element={<Home />} />

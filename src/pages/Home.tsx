@@ -2,13 +2,16 @@ import React from "react";
 import About from "../components/home/About";
 import Projects from "../components/home/Projects";
 import Contact from "../components/home/Contact";
+import MatrixRainBackground from "../components/MatrixRainBackground";
 
 const Home: React.FC = () => {
   return (
-    <div className="relative min-h-screen font-sans">
-      {/* Background gradient */}
-      <div
-        className="
+    <div>
+      <MatrixRainBackground />
+      <div className="relative min-h-screen font-sans">
+        {/* Background gradient */}
+        <div
+          className="
           absolute 
           inset-0 
           -z-10 
@@ -21,13 +24,14 @@ const Home: React.FC = () => {
           to-[#C084FC] 
           blur-[118px]
         "
-      ></div>
+        ></div>
 
-      <div className="relative z-10">
-        <div className="flex-col space-y-10 my-10 mx-24">
-          <About />
-          <Projects />
-          <Contact />
+        <div className="relative z-10">
+          <div className="flex-col space-y-10 my-10 mx-24">
+            <About />
+            <Projects />
+            <Contact />
+          </div>
         </div>
       </div>
     </div>

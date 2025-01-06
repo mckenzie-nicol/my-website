@@ -22,7 +22,7 @@ const MatrixRainBackground = () => {
       const draw = () => {
         if (ctx) {
           ctx.fillStyle = "rgba(100,67,206, 0.04)";
-          ctx.fillRect(0, 0, width, height);
+          ctx.fillRect(0, 0, width + 100, height + 100);
           ctx.fillStyle = "#191970";
           ctx.font = "15px monospace";
         }
