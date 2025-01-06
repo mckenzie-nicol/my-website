@@ -51,27 +51,27 @@ const MatrixRainBackground = () => {
 
       animate();
 
-      const handleResize = () => {
-        width = canvas.width = window.innerWidth;
-        height = canvas.height = window.innerHeight;
-        columns = Math.floor(width / 20);
-        drops = [];
-        for (let i = 0; i < columns; i++) {
-          drops[i] = 1;
-        }
-      };
+      // const handleResize = () => {
+      //   width = canvas.width = window.innerWidth;
+      //   height = canvas.height = window.innerHeight;
+      //   columns = Math.floor(width / 20);
+      //   drops = [];
+      //   for (let i = 0; i < columns; i++) {
+      //     drops[i] = 1;
+      //   }
+      // };
 
-      const isMobileDevice = /Mobi/i.test(window.navigator.userAgent);
+      // const isMobileDevice = /Mobi/i.test(window.navigator.userAgent);
 
-      if (!isMobileDevice) {
-        window.addEventListener("resize", handleResize);
-      }
+      // if (!isMobileDevice) {
+      //   window.addEventListener("resize", handleResize);
+      // }
 
-      return () => {
-        if (!isMobileDevice) {
-          window.addEventListener("resize", handleResize);
-        }
-      };
+      // return () => {
+      //   if (!isMobileDevice) {
+      //     window.addEventListener("resize", handleResize);
+      //   }
+      // };
     }
   });
   return (
