@@ -1,20 +1,19 @@
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 
 const Landing = () => {
-
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <div>
       {/* Main Welcome Banner Section */}
-      <section className="relative min-h-screen w-full overflow-hidden flex items-center justify-center">
-        {/* Blurred Gradient Background */}
-        <div
-          className="absolute inset-0
+      <div
+        className="absolute inset-0
            bg-gradient-to-tr from-indigo-400 to-[#C084FC]
            blur-[118px] 
            pointer-events-none"
-        ></div>
+      ></div>
+      <section className="relative min-h-screen w-full overflow-hidden flex items-center justify-center">
+        {/* Blurred Gradient Background */}
 
         {/* Content Container */}
         <div className="relative z-10 flex flex-col items-center text-white px-4">
@@ -54,6 +53,6 @@ const Landing = () => {
       </section>
     </div>
   );
-}
+};
 
-export default Landing
+export default Landing;
